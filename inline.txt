@@ -1,0 +1,16 @@
+ALways inlude mem and cc in cllober section in the assemebly
+- Type sof Inline assembly vode
+    1. Basic Inline assembly code
+        Format: asm ("Statemnts)
+    2. Extended Inline Assembly code
+        Format: asm ("statements" : ouput_registers : input_registers : clobbered_registers)
+- Volatile specifier instructs the compiler not to modify the statement and place it exactly where it was in the orginal code
+- Modifier (For output value)
+    = (tells the compiler that the previous value will be discarded and replaced by the new data)
+    + (And operand i read and written by an instruction)
+    & (Output register shouldn't ovelap an inout register and sgould be used only for output)
+    % (Tells the compiler that operans may be commutative)
+- Qualifier 
+    r -> means a value will be stored in one of the general purpose register
+- Constraints
+    Any number from 0 to 9 is called the matching contraint
